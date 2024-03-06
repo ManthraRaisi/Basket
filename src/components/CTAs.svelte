@@ -2,7 +2,7 @@
   /**
    * @type {any}
    */
-  export let dark;
+  export let dark = null;
 </script>
 
 <div class="flex items-center gap-4">

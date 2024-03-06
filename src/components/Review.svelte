@@ -1,6 +1,7 @@
 <script>
   import ReviewCard from "./ReviewCard.svelte";
   import SectionWrapper from "./SectionWrapper.svelte";
+  import Stars from "./Stars.svelte";
   let lim = true;
   let ReviewsList = [
     {
@@ -48,7 +49,7 @@
   ];
 </script>
 
-<SectionWrapper id>
+<SectionWrapper id="reviews">
   <div
     class="flex flex-col gap-10 sm:gap-14 md:gap-24 py-20 flex 1 items-center justify-center"
   >
@@ -59,7 +60,7 @@
       <h3
         class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center"
       >
-        See What <span class="text-indigo-400">Others</span>Have To Say
+        See What <span class="text-indigo-400">Others </span>Have To Say
       </h3>
     </div>
     <div class="flex flex-col md:flex-row gap-8 w-fit mx-auto">
@@ -80,9 +81,9 @@
     </button>
     <div class="flex flex-col gap-10">
       <p class="mx-auto text-lg sm:text-xl md:text-2xl font-semibold">
-        Trusted by 1,349 Swoldiers
+        Trusted by 1,349 users
       </p>
-      <!-- <Stars /> -->
+      <Stars />
     </div>
   </div></SectionWrapper
 >

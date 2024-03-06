@@ -2,7 +2,7 @@
   /**
    * @type {any}
    */
-  export let id;
+  export let id = null;
 </script>
 
 <section {id} class={"min-h-screen flex flex-col"}>

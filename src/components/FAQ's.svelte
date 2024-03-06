@@ -3,43 +3,78 @@
   let faqs = [
     {
       question: "What is Basket?",
-      ans: "Basket is a web application designed for selling products online, t allows users to browse through a variety of products, add items to their shopping cart, and proceed to checkout to make purchases. The name Basket suggests a place where users can collect items they wish to buy, much like placing items in a physical shopping basket while shopping in a store. ",
+      answer:
+        "Basket is a web application designed for selling products online, similar to platforms like Amazon. It allows users to browse through various products, add items to their shopping cart, and proceed to checkout to make purchases.",
     },
     {
-      question: "How do I download Basket?",
-      ans: "You can download Basket from the App Store (for iOS) or Google Play Store (for Android) on your mobile device.",
+      question: "What features does Basket offer?",
+      answer:
+        "Basket offers a range of features including personalized recommendations, one-click reordering, virtual try-on technology, advanced search filters, secure payment options, and more.",
     },
     {
-      question: "Is Basket free to use?",
-      ans: "Basket offers a wide range of products for sale, with features including browsing, adding items to cart, checkout, payment options, order tracking, and customer support, though pricing may vary.",
+      question: "How does Basket's personalized recommendations work?",
+      answer:
+        "Basket employs advanced algorithms to analyze users' browsing and purchase history, providing tailored product recommendations based on their preferences and behavior.",
     },
     {
-      question: "What types of workouts does Swoley Moley offer?",
-      ans: "Swoley Moley offers a variety of workouts, including cardio, strength training, and flexibility exercises. The workouts are designed to be engaging and entertaining.",
+      question: "Is Basket's checkout process secure?",
+      answer:
+        "Yes, Basket ensures a secure checkout process by integrating with multiple payment gateways and implementing industry-standard security measures to protect users' payment information.",
     },
     {
-      question: "Can I connect Swoley Moley to my fitness tracker?",
-      ans: "Yes, Swoley Moley supports integration with popular fitness trackers, allowing you to sync your workout data and track your progress seamlessly.",
+      question: "Can I track my orders on Basket?",
+      answer:
+        "Absolutely! Basket provides order tracking functionality, allowing users to monitor the status of their orders and receive updates on shipping and delivery.",
     },
     {
-      question: "Are there multiplayer features in Swoley Moley?",
-      ans: "Yes, Swoley Moley includes multiplayer challenges, allowing you to compete with friends or join group workouts for a more interactive and social experience.",
+      question: "Does Basket offer customer support?",
+      answer:
+        "Yes, Basket provides customer support services to assist users with inquiries, returns, and other issues. You can reach out to our support team via email, live chat, or phone.",
     },
     {
-      question: "How does Swoley Moley motivate users to stay active?",
-      ans: "Swoley Moley employs a reward system, where users earn points and achievements for completing workouts. These rewards can be used to unlock new levels, challenges, and in-app content.",
+      question: "Are there any subscription fees for using Basket?",
+      answer:
+        "Basket is free to use for browsing and purchasing products. However, some premium features or subscription-based services may incur additional fees.",
     },
     {
-      question: "Can I customize my workouts in Swoley Moley?",
-      ans: "Absolutely! Swoley Moley allows users to customize their workouts based on personal preferences, fitness goals, and available equipment.",
+      question: "Can I return items purchased through Basket?",
+      answer:
+        "Yes, Basket has a return policy that allows users to return items within a specified period for a refund or exchange. Please refer to our returns policy for more information.",
     },
     {
-      question: "Is there a beginner-friendly mode in Swoley Moley?",
-      ans: "Yes, Swoley Moley offers a beginner-friendly mode with easier exercises and lower intensity workouts, making it suitable for users at various fitness levels.",
+      question: "Does Basket offer international shipping?",
+      answer:
+        "Yes, Basket offers international shipping to select countries. Shipping rates and delivery times may vary depending on the destination.",
     },
     {
-      question: "How often should I use Swoley Moley for optimal results?",
-      ans: "The frequency of Swoley Moley workouts depends on your fitness goals. It is recommended to engage in at least 3-5 sessions per week for noticeable results.",
+      question: "How can I update my account information on Basket?",
+      answer:
+        "You can update your account information, including your shipping address and payment details, by accessing your account settings on the Basket website or app.",
+    },
+    {
+      question: "Can I sell products on Basket as a seller?",
+      answer:
+        "At the moment, Basket is a platform for purchasing products rather than selling. However, if you're interested in selling your products, you can explore other e-commerce platforms or marketplaces.",
+    },
+    {
+      question: "Is my personal information secure on Basket?",
+      answer:
+        "Yes, Basket takes user privacy and security seriously. We employ industry-standard security measures to protect users' personal information and use encryption to secure data transmission.",
+    },
+    {
+      question: "Does Basket have a mobile app?",
+      answer:
+        "Yes, Basket offers a mobile app for both iOS and Android devices, providing users with a convenient way to shop on the go.",
+    },
+    {
+      question: "Can I save items for later on Basket?",
+      answer:
+        "Yes, Basket provides a 'Save for Later' feature, allowing users to bookmark items they're interested in but not ready to purchase yet. You can access your saved items from your account.",
+    },
+    {
+      question: "Does Basket offer discounts or promotions?",
+      answer:
+        "Yes, Basket occasionally runs promotions and offers discounts on select products. Be sure to sign up for our newsletter or follow us on social media to stay updated on the latest deals.",
     },
   ];
 </script>
@@ -72,7 +107,7 @@
           <h4 class="text-lg sm:text-xl md:text-2xl pt-2">
             {faq.question}
           </h4>
-          <p class="pl-2">{faq.ans}</p>
+          <p class="pl-2">{faq.answer}</p>
         </div>
       {/each}
     </div>
