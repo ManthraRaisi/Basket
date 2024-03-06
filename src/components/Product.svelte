@@ -3,37 +3,22 @@
   import SectionWrapper from "./SectionWrapper.svelte";
   let productFeatures = [
     {
-      featureList: [
-        "Daily streak counter",
-        "Weights and reps tracker",
-        "Community challenges",
-        "Every workout is new and exciting",
-      ],
+      featureList: ["Personalized Recommendations:"],
       description:
-        "Swoley moley ensures all users have the information they need to train safely and train effectively.",
-      imgUrl: "assets/selection.png",
+        "Basket employs advanced algorithms to analyze your browsing and purchase history, providing tailored product recommendations suited to your preferences. Discover new items you'll love effortlessly, enhancing your shopping experience.",
+      imgUrl: "assets/selection.jpg",
     },
     {
-      featureList: [
-        "Select your preferences",
-        "Personalize your workouts",
-        "Customize your training",
-        "Guarantees progress on all core exercises",
-      ],
+      featureList: ["One-Click Reordering:"],
       description:
-        "Build you streaks and see your progress with our amazing tracking and analytics features.",
-      imgUrl: "assets/training.png",
+        "Streamline your shopping routine with the convenience of one-click reordering. Easily repurchase your favorite items or essentials without navigating through multiple steps, saving you time and effort.",
+      imgUrl: "assets/training.jpg",
     },
     {
-      featureList: [
-        "Eliminating guesswork",
-        "Save time",
-        "Achieve the performance you seek",
-        "Builds functional strength",
-      ],
+      featureList: ["Virtual Try-On Technology"],
       description:
-        "Enter as much information about yourself as you desire to ensure all workouts are personalized to your every need.",
-      imgUrl: "assets/goal.png",
+        "Explore our innovative virtual try-on feature, allowing you to visualize how products will look before purchasing. Whether trying on clothing, accessories, or even furniture, this immersive experience ensures confidence in your buying decisions, minimizing returns and enhancing satisfactio.",
+      imgUrl: "assets/goal.jpg",
     },
   ];
 </script>
@@ -44,31 +29,31 @@
   >
     <div class="flex flex-col gap-2">
       <p class="opacity-60 text-base sm:text-lg md:text-xl text-center">
-        Start your lifetime <span class="text-indigo-400">gym streak</span> today
+        Shop smart with y<span class="text-indigo-400">Basket</span> today
       </p>
       <h3
         class="text-4xl sm:text-5xl md:text-6xl max-w-[1000px] mx-auto w-full font-semibold text-center"
       >
-        Features For Everyone
+        Features tailored for everyone.
       </h3>
     </div>
 
     {#each productFeatures as productFeature, index}
       <ProductCard {productFeature} {index}>
         {#if index === 0}
-          Experience a beginner exercise <span
-            class="text-indigo-400 font-medium">master</span
-          > class
-        {:else if index === 1}
-          Lay the foundations for <span class="text-indigo-400 font-medium"
-            >routine</span
-          > and consistency
-        {:else}
-          Workouts specific to your <span class="text-indigo-400 font-medium"
-            >environment</span
+          enhancing your <span class="text-indigo-400 font-medium"
+            >shopping</span
           >
-          and
-          <span class="text-indigo-400 font-medium">expertise</span>
+          experience.
+        {:else if index === 1}
+          shopping routine with <span class="text-indigo-400 font-medium"
+            >one-clicK</span
+          > reordering
+        {:else}
+          innovative virtual <span class="text-indigo-400 font-medium">
+            try-ont</span
+          >
+          feature
         {/if}
       </ProductCard>
     {/each}
