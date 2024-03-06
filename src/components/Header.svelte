@@ -1,4 +1,5 @@
 <script>
+  import { openModal } from "../store/index.js";
 </script>
 
 <header class="flex flex-col relative z-20">
@@ -9,7 +10,10 @@
       <h1 class="font-semibold">Bas<span class="text-indigo-400">ket</span></h1>
     </a>
 
-    <button class="md:hidden grid place-items-center">
+    <button
+      on:click={() => ($openModal = true)}
+      class="md:hidden grid place-items-center"
+    >
       <i class="fa-solid fa-bars"></i>
     </button>
     <nav class="hidden md:flex items-center gap-4 lg:gap-6">
